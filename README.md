@@ -1,109 +1,136 @@
-# Data Structure Visualizer
+<div align="center">
+  <img src="DSV-Logo.png" alt="DSV Logo" width="200"/>
+  
+  # 🎯 Data Structures Visualizer (DSV)
+  
+  **Interactive Web-Based Learning Tool for Data Structures & Algorithms** 📚✨
+  
+  [![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://python.org)
+  [![Flask](https://img.shields.io/badge/Flask-2.0+-green.svg)](https://flask.palletsprojects.com)
+  [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+  
+</div>
 
-This project provides a web-based tool for visualizing fundamental data structures and sorting algorithms. Users can create, manipulate, and sort arrays, linked lists, stacks, and queues through an interactive interface.
+---
 
-## Features
+## 🚀 Overview
 
-### Sorting Algorithms
-Users can generate an array and visualize step-by-step sorting using one of the following sorting algorithms:
-* Bubble Sort
-* Insertion Sort
-* Selection Sort
-* Merge Sort
+DSV is a powerful, interactive web application that brings data structures and sorting algorithms to life! Perfect for students, educators, and developers who want to visualize and understand how fundamental computer science concepts work under the hood.
 
-The sorting process is animated, displaying comparisons and swaps at each step.
+## ✨ Features
 
-### Data Structures
-This project also implements and visualizes:
-* **Linked Lists**: Insert and delete elements from the beginning or end.
-* **Stacks**: Push and pop elements, maintaining Last-In-First-Out (LIFO) order.
-* **Queues**: Enqueue and dequeue elements, maintaining First-In-First-Out (FIFO) order.
+### 🔄 Sorting Algorithms
+Visualize step-by-step sorting with beautiful animations:
+- 🫧 **Bubble Sort** - Watch elements bubble to their correct positions
+- 🎯 **Selection Sort** - See the selection of minimum elements
+- 📝 **Insertion Sort** - Observe elements being inserted in order  
+- 🔀 **Merge Sort** - Experience the divide-and-conquer approach
 
-## How It Works
-1. Users can generate a custom array by specifying size, minimum, and maximum values, or they can randomize it.
-2. The sorting algorithm can then be applied, showing step-by-step transformations.
-3. Linked lists, stacks, and queues can be manipulated through API endpoints.
+### 🏗️ Data Structures
+Interactive manipulation of core data structures:
+- 🔗 **Linked Lists** - Insert/delete from beginning or end with visual connections
+- 📚 **Stacks** - Push/pop operations with LIFO visualization
+- 🚶‍♂️ **Queues** - Enqueue/dequeue with FIFO demonstration
 
-## Installation & Usage
+### 🎮 Interactive Controls
+- 🎲 **Custom Array Generation** - Set size, min/max values
+- ⚡ **Speed Control** - Adjust animation speed to your preference
+- 👆 **Step-by-Step Mode** - Manual control over each operation
+- 🤖 **Auto Mode** - Sit back and watch the magic happen
+
+## 🛠️ Installation & Setup
 
 ### Prerequisites
-Ensure you have Python installed along with Flask:
-```sh
+Make sure you have Python 3.7+ installed on your system.
+
+### Quick Start
+```bash
+# 📥 Clone the repository
+git clone https://github.com/jishanahmed-shaikh/Algorithm-Visualizer.git
+cd Algorithm-Visualizer
+
+# 📦 Install dependencies
 pip install flask numpy
+
+# 🚀 Run the application
+python app.py
+
+# 🌐 Open your browser and navigate to:
+# http://127.0.0.1:5000
 ```
 
-### Running the Application
-1. Clone this repository:
-   ```sh
-   git clone https://github.com/your-repo/Data-Structure-Visualizer.git
-   ```
-2. Navigate to the project directory:
-   ```sh
-   cd Data-Structure-Visualizer
-   ```
-3. Run the Flask server:
-   ```sh
-   python app.py
-   ```
-4. Open a web browser and go to:
-   ```
-   http://127.0.0.1:5000
-   ```
+## 🎯 How to Use
 
-## API Endpoints
-The application provides API routes for interacting with the data structures:
+1. **🎲 Generate Data**: Create custom arrays or use random generation
+2. **🔧 Choose Algorithm**: Select from bubble, selection, insertion, or merge sort
+3. **⚡ Set Speed**: Adjust animation speed using the slider
+4. **▶️ Visualize**: Watch your data come to life with smooth animations
+5. **🏗️ Explore Structures**: Switch to stacks, queues, or linked lists for hands-on learning
 
-### Sorting
-- **POST /generateDS** - Generates a random array.
-- **POST /sort** - Sorts an array using a specified algorithm.
+## 🔌 API Endpoints
 
-### Linked List
-- **POST /linkedlist/insert_beginning** - Inserts an element at the beginning.
-- **POST /linkedlist/insert_end** - Inserts an element at the end.
-- **POST /linkedlist/delete_beginning** - Deletes an element from the beginning.
-- **POST /linkedlist/delete_end** - Deletes an element from the end.
+### Sorting Operations
+- `POST /generateDS` 🎲 - Generate random array
+- `POST /sort` 🔄 - Execute sorting algorithm
 
-### Stack
-- **POST /stack/push** - Pushes an element onto the stack.
-- **POST /stack/pop** - Pops an element from the stack.
+### Linked List Operations  
+- `POST /linkedlist/insert_beginning` ➕ - Insert at head
+- `POST /linkedlist/insert_end` ➕ - Insert at tail
+- `POST /linkedlist/delete_beginning` ➖ - Delete from head
+- `POST /linkedlist/delete_end` ➖ - Delete from tail
 
-### Queue
-- **POST /queue/enqueue** - Adds an element to the queue.
-- **POST /queue/dequeue** - Removes an element from the queue.
+### Stack Operations
+- `POST /stack/push` ⬆️ - Push element
+- `POST /stack/pop` ⬇️ - Pop element
 
-## Technologies Used
-This project is built using:
-* **Python (Flask)** - Backend framework
-* **NumPy** - Array operations
-* **JavaScript, HTML, CSS** - Frontend (for visualization)
+### Queue Operations
+- `POST /queue/enqueue` ➡️ - Add to queue
+- `POST /queue/dequeue` ⬅️ - Remove from queue
 
-## Future Enhancements
-- Implement additional sorting algorithms (Quick Sort, Heap Sort, etc.)
-- Improve visualization with animations and UI enhancements
-- Add more data structures such as Binary Trees and Graphs
+## 🛠️ Tech Stack
 
-## Contributing
-Contributions are welcome! Feel free to fork this repository and submit pull requests with improvements or additional features.
+- **🐍 Backend**: Python + Flask
+- **🧮 Data Processing**: NumPy
+- **🎨 Frontend**: HTML5, CSS3, Vanilla JavaScript
+- **📱 Responsive Design**: Mobile-friendly interface
+- **🎭 Animations**: CSS transitions + JavaScript
 
-## License
-This project is open-source and available under the [MIT License](LICENSE).
+## 🎯 Educational Benefits
 
----
+- **👁️ Visual Learning**: See algorithms in action
+- **🧠 Concept Reinforcement**: Interactive manipulation builds understanding
+- **⏱️ Complexity Analysis**: Observe time complexity differences
+- **🎓 Perfect for**: Computer Science students, coding bootcamps, self-learners
 
-**Demo Screenshots:**
+## 🚀 Future Enhancements
 
-#### Sorting Animation
-![ezgif-33acc2102d88d3](https://github.com/user-attachments/assets/05424c38-88dd-4876-b8e9-97381b997aae)
+- 🌳 **Tree Structures**: Binary trees, AVL trees, heaps
+- 📊 **Graph Algorithms**: BFS, DFS, shortest path
+- 🔍 **Search Algorithms**: Binary search, linear search
+- 🎨 **Enhanced UI**: Dark mode, themes, better animations
+- 📱 **Mobile App**: Native iOS/Android versions
+- 🔊 **Audio Feedback**: Sound effects for operations
 
+## 🤝 Contributing
 
-#### Stack Operations
-![ezgif-30b603d00a850f](https://github.com/user-attachments/assets/5141cb43-cda8-4868-95ca-adf611f97977)
+We love contributions! Here's how you can help:
 
+1. 🍴 Fork the repository
+2. 🌿 Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. 💾 Commit your changes (`git commit -m 'Add amazing feature'`)
+4. 📤 Push to the branch (`git push origin feature/amazing-feature`)
+5. 🔄 Open a Pull Request
 
-#### Queue Operations
-![ezgif-3e6893721aeb7d](https://github.com/user-attachments/assets/edfcc38d-fbfb-4671-8156-15f9d2d40143)
+## 📄 License
 
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
----
-Start visualizing data structures and sorting algorithms today!
-
+<div align="center">
+  
+  **🎓 Start your data structures journey today!** 
+  
+  Made with ❤️ for the learning community
+  
+  ⭐ **Star this repo if it helped you learn!** ⭐
+  
+</div>
