@@ -1,7 +1,9 @@
 <div align="center">
+# 🎯 Data Structures Visualizer (DSV)
+</div>
+
+<div align="center">
   <img src="DSV-Logo.png" alt="DSV Logo" width="200"/>
-  
-  # 🎯 Data Structures Visualizer (DSV)
   
   **Interactive Web-Based Learning Tool for Data Structures & Algorithms** 📚✨
   
